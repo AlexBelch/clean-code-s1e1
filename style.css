@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .more-inf {
+.header .header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -34,13 +34,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.center-element__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.center-element__task-row-wrapper {
   display: flex;
 }
 
@@ -59,7 +59,7 @@ button {
   outline: none;
 }
 
-.button {
+.center-element__button {
   background: none;
   border: 0px;
   color: #888;
@@ -69,7 +69,7 @@ button {
   cursor: pointer;
 }
 
-.button:hover {
+.center-element__button:hover {
   color: #3a3a3a;
 }
 
@@ -85,7 +85,7 @@ title,
   text-transform: uppercase;
 }
 
-.task:not(label) {
+.center-element__task:not(label) {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +98,7 @@ title,
   color: #888;
 }
 
-.task:not(label):focus {
+.center-element__task:not(label):focus {
   color: #333;
 }
 
@@ -138,17 +138,17 @@ li > label {
   width: 226px;
 }
 
-li > .task:not(label) {
+li > .center-element__task:not(label) {
   width: 226px;
 }
 
-.delete img {
+.center-element__button-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.center-element__button-delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -159,11 +159,11 @@ li > .task:not(label) {
 }
 
 /* Edit Task */
-ul li .task:not(label) {
+ul li .center-element__task:not(label) {
   display: none;
 }
 
-ul li.editMode .task:not(label) {
+ul li.editMode .center-element__task:not(label) {
   display: inline-block;
   width: 224px;
 }
